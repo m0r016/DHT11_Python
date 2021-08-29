@@ -3,7 +3,7 @@ import dht11
 import time
 import sys
 import csv
-import datatime
+import datetime
 import slackweb
 
 GPIO.setwarnings(False)
@@ -22,7 +22,8 @@ while True:
         val[0] = datatime.datatime.now()
         val[1] = temp
         val[2] = humidity
-        print('now time ' + str(val[0]) + ',' + ' now temp ' + str(val[1]) + ',' + 'now humidity' + str(val[2]))
+        print('now time ' + str(val[0]) + ',' + ' now temp ' +
+              str(val[1]) + ',' + 'now humidity' + str(val[2]))
 
         with open('./log.csv', 'a') as f:
             writer = csv.writer(f)
