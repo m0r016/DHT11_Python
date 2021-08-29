@@ -28,5 +28,6 @@ while True:
         with open('./log.csv', 'a') as f:
             writer = csv.writer(f)
             writer.writerow(val)
+        time.sleep(5)
     except (KeyboardInterrupt, SystemExit):
         cleanAndExit()
