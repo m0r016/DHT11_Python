@@ -19,7 +19,7 @@ humidity = result.humidity
 while True:
     try:
         val = [0, 0, 0]
-        val[0] = datetime.datatime.now()
+        val[0] = datetime.datetime.now()
         val[1] = temp
         val[2] = humidity
         print('now time ' + str(val[0]) + ',' + ' now temp ' +
